@@ -184,7 +184,6 @@ public class MyNineNineGame
         {
             playerCard.add(i);
         }
-
     }
 
     public static int AIChooseSpecialCard(int specialCard, int total)
