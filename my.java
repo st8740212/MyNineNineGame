@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class MyNineNineGame
+public class mynineninegame
 {
     public static void main(String[] args)
     {
@@ -60,8 +60,8 @@ public class MyNineNineGame
             }
             else
             {
-                int selectComputer = AIChooseCard(setSpecialCardTurnPlace, total);
-                initPlayerOutTheCard = playOutCard(setSpecialCardTurnPlace, cardList, initSetCardVariable, selectComputer);
+                selectCard = AIChooseCard(setSpecialCardTurnPlace, total);
+                initPlayerOutTheCard = playOutCard(setSpecialCardTurnPlace, cardList, initSetCardVariable, selectCard);
                 initSetCardVariable = specialCardVariable(sequencePlayerList, AISequenceNumber(initPlayerOutTheCard));
                 total = AIChooseSpecialCard(initPlayerOutTheCard, total);
                 System.out.println("目前分數: " + total);
